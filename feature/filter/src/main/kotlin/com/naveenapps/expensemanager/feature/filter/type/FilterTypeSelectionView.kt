@@ -102,21 +102,21 @@ private fun FilterSelectionView(
                 }
             )
         }
-        Text(
-            modifier = Modifier.padding(16.dp),
-            text = stringResource(id = R.string.categories),
-            style = MaterialTheme.typography.titleMedium,
-            fontWeight = FontWeight.Black,
-        )
-        Row(modifier = Modifier.fillMaxWidth()) {
-            CategoryFilter(
-                categories = state.categories,
-                selectedCategories = state.selectedCategories,
-                onSelection = {
-                    onAction.invoke(FilterTypeAction.SelectCategory(it))
-                }
-            )
-        }
+//        Text(
+//            modifier = Modifier.padding(16.dp),
+//            text = stringResource(id = R.string.categories),
+//            style = MaterialTheme.typography.titleMedium,
+//            fontWeight = FontWeight.Black,
+//        )
+//        Row(modifier = Modifier.fillMaxWidth()) {
+//            CategoryFilter(
+//                categories = state.categories,
+//                selectedCategories = state.selectedCategories,
+//                onSelection = {
+//                    onAction.invoke(FilterTypeAction.SelectCategory(it))
+//                }
+//            )
+//        }
         Box(
             modifier = Modifier
                 .fillMaxWidth()

@@ -72,7 +72,7 @@ fun ColorIconAmountView(
                 .weight(1f)
                 .align(Alignment.CenterVertically),
             text = title,
-            style = MaterialTheme.typography.bodyMedium,
+            style = MaterialTheme.typography.bodyLarge,
         )
         Text(
             modifier = Modifier
@@ -81,7 +81,7 @@ fun ColorIconAmountView(
                 .align(Alignment.CenterVertically),
             text = amount,
             fontWeight = FontWeight.Bold,
-            style = MaterialTheme.typography.bodyMedium,
+            style = MaterialTheme.typography.bodyLarge,
             color = if (color != null) {
                 colorResource(id = color)
             } else {
@@ -154,7 +154,7 @@ fun WidgetHeader(
                 .wrapContentWidth()
                 .align(Alignment.CenterVertically),
             text = title,
-            style = MaterialTheme.typography.titleMedium,
+            style = MaterialTheme.typography.headlineMedium,
         )
         Text(
             modifier = Modifier

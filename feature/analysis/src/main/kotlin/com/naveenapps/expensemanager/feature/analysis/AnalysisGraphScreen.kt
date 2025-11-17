@@ -68,21 +68,21 @@ fun AnalysisGraphScreen(
         modifier = Modifier
             .verticalScroll(rememberScrollState())
     ) {
-        graphData?.chartData?.let {
-            ChartScreen(
-                modifier = Modifier.padding(start = 16.dp, end = 16.dp),
-                chart = it,
-                isDarkTheme = isDarkTheme,
-            )
-        } ?: run {
-            EmptyItem(
-                modifier = Modifier
-                    .fillMaxWidth()
-                    .height(200.dp),
-                emptyItemText = stringResource(id = R.string.no_chart_available),
-                icon = com.naveenapps.expensemanager.core.designsystem.R.drawable.ic_no_analysis
-            )
-        }
+//        graphData?.chartData?.let {
+//            ChartScreen(
+//                modifier = Modifier.padding(start = 16.dp, end = 16.dp),
+//                chart = it,
+//                isDarkTheme = isDarkTheme,
+//            )
+//        } ?: run {
+//            EmptyItem(
+//                modifier = Modifier
+//                    .fillMaxWidth()
+//                    .height(200.dp),
+//                emptyItemText = stringResource(id = R.string.no_chart_available),
+//                icon = com.naveenapps.expensemanager.core.designsystem.R.drawable.ic_no_analysis
+//            )
+//        }
 
         IncomeExpenseBalanceView(
             expenseFlowState = amountUiState,
@@ -92,10 +92,10 @@ fun AnalysisGraphScreen(
                 .padding(start = 16.dp, end = 16.dp, top = 16.dp),
         )
 
-        TransactionAverageItem(
-            modifier = Modifier.padding(16.dp),
-            averageData = averageData,
-        )
+//        TransactionAverageItem(
+//            modifier = Modifier.padding(16.dp),
+//            averageData = averageData,
+//        )
     }
 }
 
@@ -143,17 +143,17 @@ fun TransactionAverageItem(
                 ) {
                     Text(
                         text = stringResource(id = R.string.day),
-                        style = MaterialTheme.typography.titleMedium,
+                        style = MaterialTheme.typography.bodyLarge,
                         fontWeight = FontWeight.Normal,
                     )
                     Text(
                         text = stringResource(id = R.string.week),
-                        style = MaterialTheme.typography.titleMedium,
+                        style = MaterialTheme.typography.bodyLarge,
                         fontWeight = FontWeight.Normal,
                     )
                     Text(
                         text = stringResource(id = R.string.month),
-                        style = MaterialTheme.typography.titleMedium,
+                        style = MaterialTheme.typography.bodyLarge,
                         fontWeight = FontWeight.Normal,
                     )
                 }
@@ -188,21 +188,21 @@ private fun AverageAmountItems(
             modifier = Modifier.align(Alignment.End),
             text = averageData.perDay,
             color = textColor,
-            style = MaterialTheme.typography.titleMedium,
+            style = MaterialTheme.typography.bodyLarge,
             textAlign = TextAlign.End,
         )
         Text(
             modifier = Modifier.align(Alignment.End),
             text = averageData.perWeek,
             color = textColor,
-            style = MaterialTheme.typography.titleMedium,
+            style = MaterialTheme.typography.bodyLarge,
             textAlign = TextAlign.End,
         )
         Text(
             modifier = Modifier.align(Alignment.End),
             text = averageData.perMonth,
             color = textColor,
-            style = MaterialTheme.typography.titleMedium,
+            style = MaterialTheme.typography.bodyLarge,
             textAlign = TextAlign.End,
         )
     }

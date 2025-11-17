@@ -128,61 +128,61 @@ private fun SettingsScreenContent(
             description = "${selectedCurrency.name}(${selectedCurrency.symbol})",
             imageVector = Icons.Outlined.Payments,
         )
-        SettingsItem(
-            modifier = Modifier
-                .clickable {
-                    onAction.invoke(SettingAction.OpenNotification)
-                }
-                .padding(top = 8.dp, bottom = 8.dp)
-                .fillMaxWidth(),
-            title = stringResource(id = R.string.reminder_notification),
-            description = stringResource(id = R.string.selected_daily_reminder_time),
-            imageVector = Icons.Outlined.EditNotifications,
-        )
-        SettingsItem(
-            modifier = Modifier
-                .clickable {
-                    onAction.invoke(SettingAction.OpenExport)
-                }
-                .padding(top = 8.dp, bottom = 8.dp)
-                .fillMaxWidth(),
-            title = stringResource(id = R.string.export),
-            description = stringResource(id = R.string.export_message),
-            imageVector = Icons.Outlined.Upload,
-        )
-        SettingsItem(
-            modifier = Modifier
-                .clickable {
-                    onAction.invoke(SettingAction.OpenRateUs)
-                }
-                .padding(top = 8.dp, bottom = 8.dp)
-                .fillMaxWidth(),
-            title = stringResource(id = R.string.rate_us),
-            description = stringResource(id = R.string.rate_us_message),
-            imageVector = Icons.Outlined.RateReview,
-        )
-        SettingsItem(
-            modifier = Modifier
-                .clickable {
-                    onAction.invoke(SettingAction.OpenAdvancedSettings)
-                }
-                .padding(top = 8.dp, bottom = 8.dp)
-                .fillMaxWidth(),
-            title = stringResource(id = R.string.advanced),
-            description = stringResource(id = R.string.advanced_config_message),
-            imageVector = Icons.Outlined.SettingsApplications,
-        )
-        SettingsItem(
-            modifier = Modifier
-                .clickable {
-                    onAction.invoke(SettingAction.OpenAboutUs)
-                }
-                .padding(top = 8.dp, bottom = 8.dp)
-                .fillMaxWidth(),
-            title = stringResource(id = com.naveenapps.expensemanager.feature.about.R.string.about_us),
-            description = stringResource(id = R.string.about_the_app_information),
-            imageVector = Icons.Outlined.Info,
-        )
+//        SettingsItem(
+//            modifier = Modifier
+//                .clickable {
+//                    onAction.invoke(SettingAction.OpenNotification)
+//                }
+//                .padding(top = 8.dp, bottom = 8.dp)
+//                .fillMaxWidth(),
+//            title = stringResource(id = R.string.reminder_notification),
+//            description = stringResource(id = R.string.selected_daily_reminder_time),
+//            imageVector = Icons.Outlined.EditNotifications,
+//        )
+//        SettingsItem(
+//            modifier = Modifier
+//                .clickable {
+//                    onAction.invoke(SettingAction.OpenExport)
+//                }
+//                .padding(top = 8.dp, bottom = 8.dp)
+//                .fillMaxWidth(),
+//            title = stringResource(id = R.string.export),
+//            description = stringResource(id = R.string.export_message),
+//            imageVector = Icons.Outlined.Upload,
+//        )
+//        SettingsItem(
+//            modifier = Modifier
+//                .clickable {
+//                    onAction.invoke(SettingAction.OpenRateUs)
+//                }
+//                .padding(top = 8.dp, bottom = 8.dp)
+//                .fillMaxWidth(),
+//            title = stringResource(id = R.string.rate_us),
+//            description = stringResource(id = R.string.rate_us_message),
+//            imageVector = Icons.Outlined.RateReview,
+//        )
+//        SettingsItem(
+//            modifier = Modifier
+//                .clickable {
+//                    onAction.invoke(SettingAction.OpenAdvancedSettings)
+//                }
+//                .padding(top = 8.dp, bottom = 8.dp)
+//                .fillMaxWidth(),
+//            title = stringResource(id = R.string.advanced),
+//            description = stringResource(id = R.string.advanced_config_message),
+//            imageVector = Icons.Outlined.SettingsApplications,
+//        )
+//        SettingsItem(
+//            modifier = Modifier
+//                .clickable {
+//                    onAction.invoke(SettingAction.OpenAboutUs)
+//                }
+//                .padding(top = 8.dp, bottom = 8.dp)
+//                .fillMaxWidth(),
+//            title = stringResource(id = com.naveenapps.expensemanager.feature.about.R.string.about_us),
+//            description = stringResource(id = R.string.about_the_app_information),
+//            imageVector = Icons.Outlined.Info,
+//        )
     }
 }
 

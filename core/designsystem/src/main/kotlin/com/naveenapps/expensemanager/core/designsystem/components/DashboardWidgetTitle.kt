@@ -19,7 +19,7 @@ fun DashboardWidgetTitle(
     Box(modifier = modifier) {
         Text(
             text = title,
-            style = MaterialTheme.typography.headlineSmall,
+            style = MaterialTheme.typography.headlineMedium,
         )
         if (onViewAllClick != null) {
             Text(
