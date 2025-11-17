@@ -1,5 +1,6 @@
 package com.naveenapps.expensemanager.core.designsystem.ui.components
 
+import android.R
 import android.widget.LinearLayout
 import androidx.annotation.ColorInt
 import androidx.compose.animation.Crossfade
@@ -72,11 +73,12 @@ fun PieChartView(
                     if (hideValues) {
                         this.setCenterTextSize(12f)
                     } else {
-                        this.setCenterTextSize(16f)
+                        this.setCenterTextSize(20f)
                     }
 
                     this.setCenterTextColor(colorCode)
                     this.centerText = buildSpannedString {
+
                         append(totalAmountText)
                     }
 
