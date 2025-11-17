@@ -71,7 +71,7 @@ fun PieChartView(
                     this.setUsePercentValues(true)
                     this.setDrawSlicesUnderHole(true)
                     if (hideValues) {
-                        this.setCenterTextSize(12f)
+                        this.setCenterTextSize(20f)
                     } else {
                         this.setCenterTextSize(20f)
                     }
